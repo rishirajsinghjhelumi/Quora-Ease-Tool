@@ -1,0 +1,32 @@
+{
+  "name": "Quora Ease Tool",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "A chrome plugin for Quora, to ease the way you answer questions on Quora.",
+  "homepage_url": "http://web.iiit.ac.in/~rishirajsingh.jhelumi/",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "page": "src/bg/background.html",
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "browser action demo",
+    "default_popup": "src/browser_action/browser_action.html"
+  },
+  "permissions": [
+    "clipboardRead",
+    "clipboardWrite",
+    "contextMenus",
+    "fileBrowserHandler",
+    "webNavigation",
+    "browsingData",
+    "unlimitedStorage",
+    "<all_urls>"
+  ]
+}
